@@ -11,7 +11,7 @@ const Greetings = () => {
 
   return (
     <div>
-      <h1>{greeting}</h1> 
+      <h1>{"Hello World" || greeting}</h1> 
       <style jsx>{`
         h1 {
           color: lightseagreen;
