@@ -1,20 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const TopicCard = ({ title, nickname }) => {
+import Heading from '../../atoms/Heading'
+import decisions from '../../../tokens/decisions'
+
+const Card = ({ title, nickname }) => {
   return (
     <>
       <div className="card">
         <span>{nickname}</span>
-        <h1>{title}</h1>
+        <Heading size="xl">{title}</Heading>
       </div>
       <style jsx>{`
         .card {
           display: inline-flex;
           flex-direction: column;
-          border: 1px solid #ccc;
-          border-radius: 4px;
+          border: 1px solid #eee;
+          margin-bottom: 15px;
           padding: 15px 20px;
+          border-radius: ${decisions.components.card.borderRadius};
+          box-shadow: ${decisions.components.card.shadow};
+          width: 100%;
+          max-width: 600px;
         }
 
         span {
@@ -25,9 +32,9 @@ const TopicCard = ({ title, nickname }) => {
   )
 }
 
-TopicCard.propTypes = {
+Card.propTypes = {
   title: PropTypes.string.isRequired,
   nickname: PropTypes.string.isRequired,
 }
 
-export default TopicCard
+export default Card

@@ -1,4 +1,4 @@
-{
+const choices = {
   "colors": {
     "brand": {},
     "common": {
@@ -142,16 +142,53 @@
   },
   "size": {
     "borderRadius": {
-
+      "0": 0,
+      "xs": "2px",
+      "md": "4px",
+      "lg": "6px",
+      "xl": "10px",
+      "2xl": "16px"
     },
     "font": {
-
+      "0": 0,
+      "xs": "12px",
+      "sm": "14px",
+      "md": "16px",
+      "lg": "18px",
+      "xl": "20px",
+      "2xl": "24px",
+      "3xl": "30px",
+      "4xl": "36px",
+      "5xl": "48px",
+      "6xl":  "60px",
+      "7xl": "72px"
     },
-    "letterSpacing": {
-
-    },
+    "letterSpacing":{},
     "spacing": {
-
+      "0": 0,
+      "1": "4px",
+      "2": "8px",
+      "3": "12px",
+      "4": "16px",
+      "5": "24px",
+      "6": "32px",
+      "7": "48px",
+      "8": "64px",
+      "9": "96px",
+      "10": "128px",
+      "11": "192px",
+      "12": "256px",
+      "13": "384px",
+      "14": "512px",
+      "15": "640px",
+      "16": "768px"
+    }
+  },
+  "common": {
+    "shadows": {
+      "minimal": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)"
     }
   }
 }
+
+export default choices
