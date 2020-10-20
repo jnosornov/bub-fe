@@ -16,7 +16,6 @@ const Card = ({ title, nickname }) => {
           display: inline-flex;
           flex-direction: column;
           border: 1px solid #eee;
-          margin-bottom: 15px;
           padding: 15px 20px;
           border-radius: ${decisions.components.card.borderRadius};
           box-shadow: ${decisions.components.card.shadow};

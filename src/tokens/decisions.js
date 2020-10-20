@@ -14,6 +14,30 @@ const decisions = {
     "card": {
       "borderRadius": choices.size.borderRadius.md,
       "shadow": choices.common.shadows.minimal
+    },
+    "button": {
+      "essence": {
+        "primary": choices.colors.brand["wisteria"],
+        "secondary": {},
+        "tertiary": {}
+      },
+      "size": {
+        "sm": {
+          "borderRadius": choices.size.spacing["4"],
+          "padding": {
+            "horizontal": choices.size.spacing["1"],
+            "vertical": choices.size.spacing["4"]
+          }
+        },
+        "md": {      
+          "borderRadius": choices.size.spacing["7"],
+          "padding": {
+            "horizontal": choices.size.spacing["2"],
+            "vertical": choices.size.spacing["7"]
+          }
+        }
+      },
+      "shadow": choices.common.shadows.bottom
     }
   },
   "common": {

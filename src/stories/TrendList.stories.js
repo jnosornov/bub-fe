@@ -4,7 +4,7 @@ import TrendList from '../components/molecules/TrendList'
 import Card from '../components/atoms/Card'
 
 export default {
-  title: 'Component/TrendList',
+  title: 'Components/TrendList',
   component: TrendList
 }
 

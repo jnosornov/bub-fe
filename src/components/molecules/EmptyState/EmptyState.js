@@ -1,6 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import Button from '../../atoms/Button'
+import Paragraph from '../../atoms/Paragraph'
+
 const EmptyState = ({ imgSrc, copy }) => {
   return (
     <>
@@ -8,7 +11,8 @@ const EmptyState = ({ imgSrc, copy }) => {
         <div className="img-box">
           <img className="img" src={imgSrc} />
         </div>
-        <p>{copy}</p>
+        <Paragraph>{copy}</Paragraph>
+        <Button size="md">Add event</Button>
       </div>
       <style jsx>{`
         .empty-state {

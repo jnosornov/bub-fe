@@ -1,6 +1,8 @@
 const choices = {
   "colors": {
-    "brand": {},
+    "brand": {
+      "wisteria": "#9552ad"
+    },
     "common": {
       "black": "#000000",
       "white": "#ffffff",
@@ -186,7 +188,8 @@ const choices = {
   },
   "common": {
     "shadows": {
-      "minimal": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)"
+      "minimal": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+      "bottom": "0 3px 5px rgba(182, 182, 182, 0.75)"
     }
   }
 }

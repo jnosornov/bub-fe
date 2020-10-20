@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 
 import Heading from '../../atoms/Heading'
 import EmptyState from '../../molecules/EmptyState'
+import Slice from '../../atoms/Slice'
 
 import decisions from '../../../tokens/decisions'
 import AI from '../../../static/images/artificial_intelligence.svg'
@@ -20,7 +21,13 @@ const TrendList = ({ title, children }) => {
             children ||
             <EmptyState
               imgSrc={AI}
-              copy={`There are no ${title} yet`}
+              copy={
+                <>
+                  There are no
+                  <Slice>{title}</Slice>
+                  yet
+                </>
+              }
             />
           }
         </div>
@@ -29,6 +36,7 @@ const TrendList = ({ title, children }) => {
         .trend-list {
           max-width: 600px;
           border: 1.25px solid #eee;
+          width: 100%;
         }
         .trend-title {
           border-bottom: 1px solid #eee;
@@ -41,7 +49,7 @@ const TrendList = ({ title, children }) => {
           align-items: center;
           padding: ${decisions.common.padding.md.horizontal} ${decisions.common.padding.md.vertical};
         }
-        .trend-items > div {
+        .trend-items > :global(div:not(:last-child)) {
           margin-bottom: 10px;
         }
 

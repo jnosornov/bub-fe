@@ -13,3 +13,6 @@ Medium.args = { size: "md", padding: "md" }
 
 export const Full = Template.bind({})
 Full.args = { padding: "md" }
+
+export const Centered = Template.bind({})
+Centered.args = { size: "md", isCentered: true, padding: "md" }
