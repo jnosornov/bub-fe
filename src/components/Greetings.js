@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Heading from './atoms/Heading'
 
 const Greetings = () => {
   const [greeting, setGreeting] = useState('')
@@ -11,12 +12,7 @@ const Greetings = () => {
 
   return (
     <div>
-      <h1>{greeting}</h1> 
-      <style jsx>{`
-        h1 {
-          color: lightseagreen;
-        }
-      `}</style>
+      <Heading>{"Hello World" || greeting}</Heading> 
     </div>
   )
 }
