@@ -4,12 +4,13 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import decisions from '../../../tokens/decisions'
 
-const Button = ({ children, size, color, onClick }) => {
+const Button = ({ children, size, color, onClick, isDisabled }) => {
   return (
     <>
-      <button onClick={onClick} className={classNames("button", {
+      <button disabled={isDisabled} onClick={onClick} className={classNames("button", {
         [`size-${size}`]: size,
-        [`color-${color}`]: color
+        [`color-${color}`]: color,
+        'isDisabled': isDisabled
       })}>
         {children}
       </button>
@@ -22,6 +23,10 @@ const Button = ({ children, size, color, onClick }) => {
           box-shadow: ${decisions.components.button.shadow};
           cursor: pointer;
           // margin-bottom: 15px;
+        }
+
+        .isDisabled {
+          background-color: ${decisions.common.disabled.backgroundColor}
         }
 
         .color-east-side {

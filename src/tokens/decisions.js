@@ -46,6 +46,9 @@ const decisions = {
         "horizontal": choices.size.spacing["3"],
         "vertical": choices.size.spacing["5"] 
       }
+    },
+    "disabled": {
+      backgroundColor: choices.colors.common.gray[600]
     }
   }
 }
