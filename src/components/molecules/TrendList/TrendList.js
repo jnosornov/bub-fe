@@ -5,11 +5,12 @@ import PropTypes from 'prop-types'
 import Heading from '../../atoms/Heading'
 import EmptyState from '../../molecules/EmptyState'
 import Slice from '../../atoms/Slice'
+import Card from '../../atoms/Card'
 
 import decisions from '../../../tokens/decisions'
 import AI from '../../../static/images/artificial_intelligence.svg'
 
-const TrendList = ({ title, children }) => {
+const TrendList = ({ title, items }) => {
   return (
     <>
       <div className="trend-list">
@@ -17,8 +18,8 @@ const TrendList = ({ title, children }) => {
           <Heading size="3xl">{title}</Heading>
         </header>
         <div className="trend-items">
-          {
-            children ||
+          { items.length
+            && items.map(item => <Card title={item.matter} nickname={item.nickname} />) || 
             <EmptyState
               imgSrc={AI}
               copy={
@@ -66,7 +67,7 @@ const TrendList = ({ title, children }) => {
 
 TrendList.propTypes = {
   title: PropTypes.string.isRequired,
-  children: PropTypes.node
+  items: PropTypes.array
 }
 
 export default TrendList
