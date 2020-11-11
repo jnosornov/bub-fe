@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import Container from '../../components/layout/Container'
 import TopicHeadline from '../../components/organisms/TopicHeadline'
 import TopicThread from '../../components/organisms/TopicThread'
 
 const Topic = () => {
-  const { topic, comments } = Seed.Post
+  const [topic, setTopic] = useState({})
+  const [comments, setComments] = useState([])
+
+  useEffect(() => {
+    const { topic, comments } = Seed.Post
+    setTopic(topic)
+    setComments(comments)
+  }, [])
+
   return (
     <>
       <Container padding="md" size="sm" isCentered>

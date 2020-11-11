@@ -13,7 +13,7 @@ const TopicDescription = ({ topic }) => {
         <Heading size="2xl">{topic.body}</Heading>
         <PostForm
           isHidden={false}
-          placeholder="Add comment"
+          placeholder="Add topic comment"
           style={{ marginTop: choices.size.spacing[8] }}
         />
       </div>
