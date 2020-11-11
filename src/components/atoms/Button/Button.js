@@ -2,12 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import classNames from 'classnames'
+
+import choices from '../../../tokens/choices'
 import decisions from '../../../tokens/decisions'
 
 const Button = ({ children, size, color, onClick, isDisabled }) => {
   return (
     <>
-      <button disabled={isDisabled} onClick={onClick} className={classNames("button", {
+      <button
+        disabled={isDisabled}
+        onClick={onClick}
+        className={classNames("button", {
         [`size-${size}`]: size,
         [`color-${color}`]: color,
         'isDisabled': isDisabled
@@ -22,7 +27,6 @@ const Button = ({ children, size, color, onClick, isDisabled }) => {
           color: white;
           box-shadow: ${decisions.components.button.shadow};
           cursor: pointer;
-          // margin-bottom: 15px;
         }
 
         .isDisabled {
@@ -32,15 +36,18 @@ const Button = ({ children, size, color, onClick, isDisabled }) => {
         .color-east-side {
           background-color: ${decisions.components.button.essence.primary};
         }
-
         .size-sm {
           border-radius: ${decisions.components.button.size.sm.borderRadius};
           padding: ${decisions.components.button.size.sm.padding.horizontal} ${decisions.components.button.size.sm.padding.vertical};
         }
-
         .size-md {
           border-radius: ${decisions.components.button.size.md.borderRadius};
           padding: ${decisions.components.button.size.md.padding.horizontal} ${decisions.components.button.size.md.padding.vertical};
+        }
+        .size-full {
+          height: 100%;
+          width: 100%;
+          border-radius: ${choices.size.borderRadius.sm}
         }
       `}</style>
     </>

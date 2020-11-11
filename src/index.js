@@ -1,14 +1,14 @@
 import React from 'react'
 import ReactDOM from "react-dom"
 
-import Greetings from './components/Greetings'
-import Main from './pages/Main'
+import './seed'
+import Topic from './pages/topic'
 import globalStyles from './shared/global'
 
 const App = () => {
   return (
     <>
-      <Main />
+      <Topic />
       <style jsx global>{globalStyles}</style>
     </>
   )

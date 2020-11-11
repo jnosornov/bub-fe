@@ -146,10 +146,11 @@ const choices = {
     "borderRadius": {
       "0": 0,
       "xs": "2px",
-      "md": "4px",
-      "lg": "6px",
-      "xl": "10px",
-      "2xl": "16px"
+      "sm": "4px",
+      "md": "6px",
+      "lg": "10px",
+      "xl": "16px",
+      "2xl": "20px"
     },
     "font": {
       "0": 0,

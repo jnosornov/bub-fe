@@ -18,6 +18,12 @@ const globalStyles = css.global`
     margin: 0;
   }
 
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
   html,
   body {
     margin: 0;

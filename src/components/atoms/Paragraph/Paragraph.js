@@ -7,7 +7,7 @@ const Paragraph = ({ children }) => {
       <p className="paragraph">{children}</p>
       <style jsx>{`
         .paragraph {
-          padding: 15px 0 8px;
+          // padding: 15px 0 8px;
         }
       `}</style>
     </>

@@ -15,24 +15,19 @@ const Container = ({ children, size, padding, isCentered }) => {
       <style jsx>{`
         .container {
           border: 1px dashed #ccc;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
         }
-
-        .container > :global(div:not(:last-child)) {
-          margin-bottom: 30px;
-        }
-
         .isCentered {
           margin: 0 auto;
         }
-
-        .size-md {
-          max-width: 700px;
+        .size-sm {
+          max-width: 40%;
         }
-
+        .size-md {
+          max-width: 50%;
+        }
+        .size-lg {
+          max-width: 75%;
+        }
         .padding-md {
           padding: 10px 20px;
         }

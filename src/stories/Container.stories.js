@@ -11,6 +11,9 @@ const Template = args => <Container {...args}>CONTENT</Container>
 export const Medium = Template.bind({})
 Medium.args = { size: "md", padding: "md" }
 
+export const Large = Template.bind({})
+Large.args = { size: "lg", padding: "md" }
+
 export const Full = Template.bind({})
 Full.args = { padding: "md" }
 
